@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |co|
     co.source_files   = 'Adjust/*.{h,m}', 'Adjust/ADJAdditions/*.{h,m}'
+    co.public_header_files = 'Adjust/**/*.h'
   end
 
   s.subspec 'Sociomantic' do |sm|
